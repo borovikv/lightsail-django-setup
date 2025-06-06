@@ -14,6 +14,7 @@ fi
 # Install dependencies
 sudo yum update -y
 sudo yum install -y git nginx python3-pip
+python3.12 -m ensurepip --upgrade
 
 # Configure SSH for GitHub access
 mkdir -p ~/.ssh

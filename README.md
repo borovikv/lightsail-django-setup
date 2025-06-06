@@ -5,7 +5,7 @@ Bootstrap a Django project on AWS Lightsail in one command.
 ## Usage
 1. Generate SSH Key on Lightsail
    ```bash
-   bash scripts/generate_ssh_key.sh
+   bash generate_ssh_key.sh
    ```
    1.1. Copy the public key printed by the script
    1.2. Go to your GitHub SSH settings https://github.com/[[user]]/[[repo_name]]/settings/keys
@@ -25,7 +25,6 @@ Bootstrap a Django project on AWS Lightsail in one command.
 6. Run the setup:
    ```bash
    cd lightsail-django-setup
-   chmod +x ./setup.sh
    ./setup.sh <your_project_name> <your_github_username>
    ```
 7. Make sure your project repo has deploy/run script and requirements.txt.
