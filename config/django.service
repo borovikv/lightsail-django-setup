@@ -1,0 +1,12 @@
+[Unit]
+Description=Django Project
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory={{PROJECT_PATH}}
+ExecStart={{PROJECT_PATH}}/deploy/run
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
