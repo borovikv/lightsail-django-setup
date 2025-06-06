@@ -12,8 +12,10 @@ else
     echo "SSH key generated at $KEY_PATH"
 fi
 
+PUB_KEY=$(cat "${KEY_PATH}.pub")
+
 # Output public key for GitHub
 echo -e "\nCopy the following public key to your GitHub account:"
 echo "--------------------------------------------"
-pbcopy < "$KEY_PATH.pub"
+echo "$PUB_KEY"
 echo "--------------------------------------------"
