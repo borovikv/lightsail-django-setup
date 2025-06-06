@@ -15,6 +15,5 @@ fi
 # Output public key for GitHub
 echo -e "\nCopy the following public key to your GitHub account:"
 echo "--------------------------------------------"
-cat "$KEY_PATH.pub"
+pbcopy < "$KEY_PATH.pub"
 echo "--------------------------------------------"
-echo -e "\nVisit: https://github.com/settings/ssh/new\n"
