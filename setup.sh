@@ -44,7 +44,7 @@ sudo systemctl restart ${PROJECT_NAME}.service
 
 # Setup nginx
 sudo mkdir -p /etc/nginx/sites-available /etc/nginx/sites-enabled
-bash ../lightsail-django-setup/scripts/create_nginx_conf.sh "$PROJECT_NAME" > /etc/nginx/sites-available/${PROJECT_NAME}
+sudo bash ../lightsail-django-setup/scripts/create_nginx_conf.sh "$PROJECT_NAME" > /etc/nginx/sites-available/${PROJECT_NAME}
 sudo ln -sf /etc/nginx/sites-available/${PROJECT_NAME} /etc/nginx/sites-enabled/${PROJECT_NAME}
 
 # Ensure nginx.conf includes sites-enabled
