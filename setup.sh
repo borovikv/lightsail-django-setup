@@ -30,8 +30,9 @@ if [ ! -d "$PROJECT_NAME" ]; then
 fi
 cd "$PROJECT_NAME"
 
+sudo yum install python3.12
 # Install Python dependencies
-pip3 install -r requirements.txt
+ pip3.12 install -r requirements.txt
 
 # Copy and enable systemd service
 sudo cp ../lightsail-django-setup/config/django.service /etc/systemd/system/${PROJECT_NAME}.service
