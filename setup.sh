@@ -18,7 +18,7 @@ sudo yum install -y git nginx python3-pip
 # Configure SSH for GitHub access
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
-if [ ! -f ~/.ssh/id_rsa ]; then
+if [ ! -f ~/.ssh/lightsail_key ]; then
     echo "No SSH key found. Generate one with ssh-keygen and add it to your GitHub account."
     exit 1
 fi
